@@ -14,7 +14,7 @@ public class NewTest {
 
 	@Test
 	public void test1() {
-		driver.findElement(By.xpath("//input[@title='Search']")).sendKeys("qwerty");
+		driver.findElement(By.xpath("//input[@title='Search']")).sendKeys("Test test");
 		driver.findElement(By.xpath("//input[@title='Search']")).sendKeys(Keys.RETURN);
 	}
 
