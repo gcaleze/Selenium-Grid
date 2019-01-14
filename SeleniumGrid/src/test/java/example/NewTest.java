@@ -21,7 +21,7 @@ public class NewTest {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", driverPath);
+		System.setProperty("webdriver.gecko.driver", driverPath);
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 	}
