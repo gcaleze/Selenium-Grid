@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 
 public class NewTest {
-	String driverPath = "/usr/bin/geckodriver";
+	String driverPath = "/usr/bin/chromedriver";
 	public WebDriver driver;
 
 	@Test
