@@ -9,8 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 
 public class NewTest {
-	//String driverPath = "/usr/bin/chromedriver";
-	String driverPath = "/usr/bin/geckodriver";
+	String driverPath = "/usr/bin/chromedriver";
+	//String driverPath = "/usr/bin/geckodriver";
 	public WebDriver driver;
 
 	@Test
@@ -21,7 +21,8 @@ public class NewTest {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.gecko.driver", driverPath);
+		//System.setProperty("webdriver.gecko.driver", driverPath);
+		System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 	}
