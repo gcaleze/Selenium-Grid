@@ -20,7 +20,7 @@ public class NewTest {
 		
 //-----------------------------------------------		
         baseURL = "http://demo.guru99.com/test/guru99home/";
-        nodeURL = "http://192.168.43.223:4444/wd/hub";
+        nodeURL = "http://192.168.125.97:4444/wd/hub";
         DesiredCapabilities capability = DesiredCapabilities.chrome();
         String label = System.getProperty("SELENIUM_LABEL");
         //capability.setCapability("jenkins.label", Platform.WINDOWS);------------
