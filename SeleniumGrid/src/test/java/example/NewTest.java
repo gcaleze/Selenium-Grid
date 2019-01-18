@@ -16,24 +16,24 @@ public class NewTest {
 	WebDriver driver;
     String baseURL, nodeURL;
 	@Test(priority = 1)
-	public void test1(){		
+	public void test1() throws MalformedURLException{		
 		
 //-----------------------------------------------		
-//        baseURL = "http://demo.guru99.com/test/guru99home/";
-//        nodeURL = "http://192.168.43.223:4444/wd/hub";
-//        DesiredCapabilities capability = DesiredCapabilities.chrome();
-//        String label = System.getProperty("SELENIUM_LABEL");
-//        //capability.setCapability("jenkins.label", Platform.WINDOWS);------------
-//        capability.setCapability("jenkins.label", label);
-//        //capability.setBrowserName("chrome");-----------
-//        //capability.setPlatform(Platform.WINDOWS);------
-//        driver = new RemoteWebDriver(new URL(nodeURL), capability);
+        baseURL = "http://demo.guru99.com/test/guru99home/";
+        nodeURL = "http://192.168.43.223:4444/wd/hub";
+        DesiredCapabilities capability = DesiredCapabilities.chrome();
+        String label = System.getProperty("SELENIUM_LABEL");
+        //capability.setCapability("jenkins.label", Platform.WINDOWS);------------
+        capability.setCapability("jenkins.label", label);
+        //capability.setBrowserName("chrome");-----------
+        //capability.setPlatform(Platform.WINDOWS);------
+        driver = new RemoteWebDriver(new URL(nodeURL), capability);
 //------------------------------
         
 //		System.setProperty("webdriver.gecko.driver","C:\\Selenium\\geckodriver.exe");	        
-		System.setProperty("webdriver.gecko.driver","/usr/bin/geckodriver");		 
-		driver = new FirefoxDriver();
-		driver.get("http://www.google.com");
+//		System.setProperty("webdriver.gecko.driver","/usr/bin/geckodriver");		 
+//		driver = new FirefoxDriver();
+//		driver.get("http://www.google.com");
 	
 
 //		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
