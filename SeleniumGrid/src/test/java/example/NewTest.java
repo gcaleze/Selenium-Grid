@@ -26,7 +26,9 @@ public class NewTest {
         baseURL = "http://demo.guru99.com/test/guru99home/";
         nodeURL = "http://192.168.43.223:4444/wd/hub";
         DesiredCapabilities capability = DesiredCapabilities.chrome();
-        capability.setCapability("gcaelze", Platform.WINDOWS);
+        String label = System.getProperty("SELENIUM_LABEL");
+        //capability.setCapability("jenkins.label", Platform.WINDOWS);
+        capability.setCapability("jenkins.label", label);
         //capability.setBrowserName("chrome");
         //capability.setPlatform(Platform.WINDOWS);
         driver = new RemoteWebDriver(new URL(nodeURL), capability);
