@@ -31,15 +31,15 @@ public class NewTest {
 //------------------------------
         
 //		System.setProperty("webdriver.gecko.driver","C:\\Selenium\\geckodriver.exe");	        
-//		System.setProperty("webdriver.gecko.driver","/usr/bin/geckodriver");		 
-//		driver = new FirefoxDriver();
-//		driver.get("http://www.google.com");
+		System.setProperty("webdriver.gecko.driver","/usr/bin/geckodriver");		 
+		driver = new FirefoxDriver();
+		driver.get("http://www.google.com");
 	
 
 //		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		driver =new ChromeDriver();
-		driver.get("http://www.google.com");
+//		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+//		driver =new ChromeDriver();
+//		driver.get("http://www.google.com");
 	
 		driver.quit();
 		driver.close();
