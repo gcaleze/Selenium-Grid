@@ -37,7 +37,7 @@ public class NewTest {
 	
 
 //		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/geckodriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		driver =new ChromeDriver();
 		driver.get("http://www.google.com");
 	
