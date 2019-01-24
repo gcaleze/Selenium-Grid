@@ -6,6 +6,12 @@
       <class name="example.NewTest">
         <methods>
           <include name="test1"/>
+          <include name="test3"/>
+          <include name="verifyTitle"/>
+          <include name="getResult"/>
+          <include name="cleanUp"/>
+          <include name="setup"/>
+          <include name="test2"/>
         </methods>
       </class> <!-- example.NewTest -->
     </classes>
