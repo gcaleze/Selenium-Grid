@@ -3,6 +3,7 @@ package example;
 import java.io.IOException;
 import java.net.URL;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -43,12 +44,11 @@ public class base {
 //		System.setProperty("webdriver.chrome.driver",driverPath);
 //		driver = new ChromeDriver();
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
-		capability.setCapability("jenkins.label","gcaleze");
-		capability.setCapability("jenkins.nodeName","(master)");
+		capability.setPlatform(Platform.WINDOWS);
 		driver = new RemoteWebDriver(new URL("http://192.168.125.97:4444/wd/hub"), capability);
 	}
 	
-	public void locateFiles() {
+	public void locateFiles(){
 		String OS = System.getProperty("os.name");
 		if (OS.equals("Windows 7")) {
 			driverPath = "C:\\Selenium\\chromedriver.exe";
